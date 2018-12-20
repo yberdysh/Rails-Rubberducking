@@ -4,7 +4,7 @@
 
 Help! As more and more students enroll in Flatiron, more rubber duckys are needed for debugging. In order to keep track of its rubber duckys and students, Flatiron is asking you to create a rubber duck tracking application.
 
-Every rubber `duck` should be created with a `name` and a `description` and every `student` should be created with a `name` and a `mod`. And since Flatiron is all about love, when a duck is created, it needs to be created with a student. After all, a duck should never be without an owner!
+Every rubber `duck` should be created with a `name` and a `description` and every `student` should be created with a `name` and a `mod`. And since Flatiron is all about love, when a duck is created, it needs to be created with a student. After all, a duck should never be without an owner! Consider how you would handle this in the seed file. (Hint: Consider using the `sample` method) Make sure you handle your migrations appropriately!
 
 With this website, a user should be:
 
