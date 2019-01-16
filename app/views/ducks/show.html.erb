@@ -1,2 +1,3 @@
 <h1><%= @duck.name %></h1>
 <p><%= @duck.description %></p>
+<%= button_to "Delete Dat Duck", duck_path(@duck), method: :delete %>

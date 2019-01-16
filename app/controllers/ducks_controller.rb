@@ -1,11 +1,11 @@
 class DucksController < ApplicationController
-
+  before_action :find_ducky, only: [:show, :destroy]
   def index
     @ducks = Duck.all
   end
 
   def show
-    @duck = Duck.find(params[:id])
+    # @duck = Duck.find(params[:id])
   end
 
   def new
@@ -24,7 +24,17 @@ class DucksController < ApplicationController
     end
   end
 
+  def destroy
+    # byebug
+    @duck.destroy
+    redirect_to ducks_path
+  end
+
   def ducky_params
     params.require(:duck).permit(:student_id, :description, :name)
+  end
+
+  def find_ducky
+    @duck = Duck.find(params[:id])
   end
 end
